@@ -4,9 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <title>toDo</title>
 </head>
 <body>
-    
+    <div class="main">
+        <div class="container">
+
+            <div class="sidebar">
+                <button class="sidebar-btn">All</button>
+                <button class="sidebar-btn">Groceries</button>
+                <button class="sidebar-btn">College</button>
+                <button class="sidebar-btn">Payments</button>
+
+                <button class="new-theme">+New Theme</button>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="main-content">
+
+                <h1 class="main-title">All Tasks</h1>
+
+                <form class="task-form">
+                    <input class="task-input" type="text" id="input" placeholder="Add a new task insdie ‘All’ category">
+                </form>
+
+                <form class="task-box">
+
+                    <div class="task">
+                        <div class="checkbox">
+                            <input class="checkbox-input" type="checkbox" id="checkbox1">
+                            <label class="checkbox-label" for="checkbox1">Get a new helmet</label>
+                        </div>
+                        <div class="mark">Uncategorized</div>
+                    </div>
+
+                    <div class="task">
+                        <div class="checkbox">
+                            <input class="checkbox-input" type="checkbox" id="checkbox2">
+                            <label class="checkbox-label" for="checkbox2">helmet</label>
+                        </div>
+                        <div class="mark">Uncategorized</div>
+                    </div>
+
+                    <div class="task">
+                        <div class="checkbox">
+                            <input class="checkbox-input" type="checkbox" id="checkbox3">
+                            <label class="checkbox-label" for="checkbox3">Get a new helmet</label>
+                        </div>
+                        <div class="mark">Uncategorized</div>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
 </body>
 </html>

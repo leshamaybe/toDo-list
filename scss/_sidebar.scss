@@ -1,0 +1,45 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 220px;
+    margin-top: 139px;
+    margin-left: 50px;
+    position: relative;
+}
+
+.sidebar-btn {
+    text-align: start;
+    background-color: #fff;
+    border: 0;
+    color: #525252;
+    font-size: 21px;
+    font-weight: 400;
+    cursor: pointer;
+    margin-bottom: 24px;
+    transition: all ease 0.2s;
+
+    &:hover {
+        color: $pink-color;
+        transition: all ease 0.2s;
+    }
+
+    &:focus {
+        color: $pink-color;
+        //font-weight: 700;
+    }
+}
+
+.new-theme {
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+    text-align: start;
+    background-color: $pink-color;
+    border: 0;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: 700;
+    padding: 5px 15px;
+}
