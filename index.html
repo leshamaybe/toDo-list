@@ -14,12 +14,14 @@
         <div class="container">
 
             <div class="sidebar">
-                <button class="sidebar-btn">All</button>
-                <button class="sidebar-btn">Groceries</button>
-                <button class="sidebar-btn">College</button>
-                <button class="sidebar-btn">Payments</button>
+                <div class="categories">
+                    <button class="sidebar-btn active">All</button>
+                </div>
 
-                <button class="new-theme">+New Theme</button>
+                <div class="new-cat">
+                    <input type="text" class="cat-input" placeholder="New category">
+                    <button class="cat-btn">Add</button>
+                </div>
             </div>
 
             <div class="line"></div>
@@ -28,38 +30,12 @@
 
                 <h1 class="main-title">All Tasks</h1>
 
-                <form class="task-form">
+                <div class="task-form">
                     <input class="task-input" type="text" id="task-input" placeholder="Add a new task insdie ‘All’ category">
-                </form>
+                    <button class="push-btn">Push</button>
+                </div>   
 
-                <form class="task-box">
-
-                    <div class="task">
-                        <div class="checkbox">
-                            <input class="checkbox-input" type="checkbox" id="checkbox1">
-                            <label class="checkbox-label" for="checkbox1">Get a new helmet</label>
-                        </div>
-                        <div class="mark">Uncategorized</div>
-                    </div>
-
-                    <div class="task">
-                        <div class="checkbox">
-                            <input class="checkbox-input" type="checkbox" id="checkbox2">
-                            <label class="checkbox-label" for="checkbox2">helmet</label>
-                        </div>
-                        <div class="mark">Uncategorized</div>
-                    </div>
-
-                    <div class="task">
-                        <div class="checkbox">
-                            <input class="checkbox-input" type="checkbox" id="checkbox3">
-                            <label class="checkbox-label" for="checkbox3">Get a new helmet</label>
-                        </div>
-                        <div class="mark">Uncategorized</div>
-                    </div>
-
-                </form>
-
+                <div class="task-box"></div>
             </div>
         </div>
     </div>

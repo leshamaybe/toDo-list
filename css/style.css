@@ -47,6 +47,16 @@
 .task-form {
   padding-top: 25px;
   padding-bottom: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .task-form input.task-input::-webkit-input-placeholder {
@@ -65,6 +75,18 @@
   color: #B5B5B5;
 }
 
+.push-btn {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  background: #e94f4f;
+  border: 1px solid #e94f4f;
+  border-radius: 5px;
+  margin-left: 10px;
+  height: 30px;
+  cursor: pointer;
+}
+
 .task-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -73,6 +95,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  overflow-y: auto;
 }
 
 .task {
@@ -87,7 +110,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   margin-bottom: 16px;
+  position: relative;
 }
 
 .task-input {
@@ -166,6 +192,16 @@
       align-self: end;
 }
 
+.delete-btn {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background: #fff;
+  color: #e94f4f;
+  border: 0;
+  cursor: pointer;
+}
+
 .sidebar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -174,13 +210,20 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
   width: 220px;
   margin-top: 139px;
   margin-left: 50px;
   position: relative;
+}
+
+.categories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .sidebar-btn {
@@ -194,6 +237,7 @@
   margin-bottom: 24px;
   -webkit-transition: all ease 0.2s;
   transition: all ease 0.2s;
+  word-break: break-word;
 }
 
 .sidebar-btn:hover {
@@ -202,22 +246,62 @@
   transition: all ease 0.2s;
 }
 
-.sidebar-btn:focus {
-  color: #e94f4f;
+.new-cat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: absolute;
+  bottom: 10px;
+  left: -45px;
 }
 
-.new-theme {
+.new-cat input.cat-input::-webkit-input-placeholder {
+  color: #B5B5B5;
+}
+
+.new-cat input.cat-input:-ms-input-placeholder {
+  color: #B5B5B5;
+}
+
+.new-cat input.cat-input::-ms-input-placeholder {
+  color: #B5B5B5;
+}
+
+.new-cat input.cat-input::placeholder {
+  color: #B5B5B5;
+}
+
+.cat-input {
+  color: #B5B5B5;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: #F3F3F3;
+  border: 0;
+  border-radius: 8px;
+  width: 100%;
+  outline: none;
+  padding: 10px 15px 10px 15px;
+}
+
+.cat-btn {
   cursor: pointer;
-  position: absolute;
-  bottom: 20px;
-  left: 0px;
   text-align: start;
   background-color: #e94f4f;
   border: 0;
   border-radius: 3px;
   color: #fff;
+  font-size: 10px;
   font-weight: 700;
-  padding: 5px 15px;
+  padding: 0 5px;
+  margin-right: 5px;
+}
+
+.active {
+  color: #e94f4f;
 }
 
 body {

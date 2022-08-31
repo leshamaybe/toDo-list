@@ -1,11 +1,15 @@
 .sidebar {
     display: flex;
     flex-direction: column;
-    justify-content: start;
     width: 220px;
     margin-top: 139px;
     margin-left: 50px;
     position: relative;
+}
+
+.categories {
+    display: flex;
+    flex-direction: column;
 }
 
 .sidebar-btn {
@@ -18,28 +22,51 @@
     cursor: pointer;
     margin-bottom: 24px;
     transition: all ease 0.2s;
+    word-break: break-word;
 
     &:hover {
         color: $pink-color;
         transition: all ease 0.2s;
     }
+}
 
-    &:focus {
-        color: $pink-color;
-        //font-weight: 700;
+.new-cat {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 10px;
+    left: -45px;
+
+    input.cat-input::placeholder {
+        color: #B5B5B5;
     }
 }
 
-.new-theme {
+.cat-input {
+    color: #B5B5B5;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #F3F3F3;
+    border: 0;
+    border-radius: 8px;
+    width: 100%;
+    outline:none;
+    padding: 10px 15px 10px 15px;
+}
+
+.cat-btn {
     cursor: pointer;
-    position: absolute;
-    bottom: 20px;
-    left: 0px;
     text-align: start;
     background-color: $pink-color;
     border: 0;
     border-radius: 3px;
     color: #fff;
+    font-size: 10px;
     font-weight: 700;
-    padding: 5px 15px;
+    padding: 0 5px;
+    margin-right: 5px;
+}
+
+.active {
+    color: $pink-color;
 }
