@@ -80,7 +80,7 @@
   font-size: 12px;
   font-weight: 700;
   background: #e94f4f;
-  border: 1px solid #e94f4f;
+  border: 0;
   border-radius: 5px;
   margin-left: 10px;
   height: 30px;
@@ -190,6 +190,11 @@
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
       align-self: end;
+  border: 0;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 .delete-btn {
