@@ -46,7 +46,7 @@ catBtn.addEventListener('click', () => {
 });
 
 categories.addEventListener('click', event => {
-    if (event.target.classList.contains('sidebar-btn')) {
+    if (event.target.classList.contains('sidebar-btn') && event.target.textContent != 'All') {
         event.target.classList.toggle('active');
     }
 });
